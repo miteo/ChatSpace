@@ -33,7 +33,7 @@ Things you may want to cover:
 
 ### Association
 - has_many :messages
-- has_many :groups
+- has_many :groups, through: :group_users
 
 
 ## massagesテーブル
@@ -55,13 +55,14 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |group_name|integer|null: false|
-|member_id|integer|null: false, foreign_key: true|
+|group_users_id|integer|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :member
+- has_many :messages
+- has_many :users, through: :group_users
 
 
-## members(中間)テーブル
+## group_users(中間)テーブル
 
 |Column|Type|Options|
 |------|----|-------|
