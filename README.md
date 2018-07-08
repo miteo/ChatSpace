@@ -34,6 +34,7 @@ Things you may want to cover:
 ### Association
 - has_many :messages
 - has_many :groups, through: :group_users
+- has_many :group_users
 
 
 ## massagesテーブル
@@ -54,12 +55,13 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|group_name|integer|null: false|
-|group_users_id|integer|null: false, foreign_key: true|
+|name|string|null: false|
+|group_users_id|integer|null: false|
 
 ### Association
 - has_many :messages
 - has_many :users, through: :group_users
+- has_many :group_users
 
 
 ## group_users(中間)テーブル
