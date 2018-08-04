@@ -7,7 +7,7 @@ body {
     margin: 0;
 }
 
-.chat-main{
+.chat-main {
   height: 100vh;
   width: calc(100% - 300px);
   background-color: $WhiteColor;
@@ -15,20 +15,20 @@ body {
   position: relative;
   min-height: 100%;
 
-  .chat-main__header{
+  &__header {
     border:1px solid #eee;
     height: calc(15% - 2px);
+
+    &--group-name {
+      padding-top: 35px;
+      padding-left: 40px;
+      font-size: 20px;
+      float: left;
+    }
   }
 }
 
-.chat-main__header--group-name{
-  padding-top: 35px;
-  padding-left: 40px;
-  font-size: 20px;
-  float: left;
-}
-
-.chat-main__header--group-edit-btn{
+.chat-main__header--group-edit-btn {
   float: right;
   margin: 28px 40px 0;
   padding: 12.5px 20px;
@@ -36,7 +36,7 @@ body {
   color: $BlueColor;
 }
 
-.chat-main__header-members{
+.chat-main__header-members {
   clear: left;
   padding-top: 15px;
   padding-left: 40px;
@@ -45,52 +45,51 @@ body {
   padding-bottom: 20px;
 }
 
-.chat-main__body{
+.chat-main__body {
   height: calc( 100vh - 15% - 90px );
+
+  &--massage-list {
+    padding-top: 46px;
+  }
 }
 
-.chat-main__body--massage-list{
-  padding-top: 46px;
-}
-
-.chat-main__massage{
+.chat-main__massage {
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
+
+  &-user-name {
+    float: left;
+  }
+
+  &-user-time {
+    float: left;
+    font-size: 12px;
+    padding-top: 2px;
+    padding-left: 10px;
+    color: $GrayColor;
+  }
 }
 
-.chat-main__massage-user-name{
-  float: left;
-}
-
-.chat-main__massage-user-time{
-  float: left;
-  font-size: 12px;
-  padding-top: 2px;
-  padding-left: 10px;
-  color: $GrayColor;
-
-}
-
-.chat-main__footer{
+.chat-main__footer {
   position: absolute;
   bottom: 0;
   width: calc(100vw - 300px);
   height: 90px;
   background-color: $FormGrayColor;
+
+  &-form {
+    margin: 0 40px;
+    position: relative;
+  }
 }
 
-.chat-main__footer-form {
-  margin: 0 40px;
-  position: relative;
-}
-
-.chat-main__massage-body{
+.chat-main__massage-body {
   clear: both;
   padding-top: 10px;
 }
 
-.input_message{
+.input_message {
   height: 50px;
   width: calc( 100% - 130px );
   margin: 20px 0;
@@ -98,7 +97,7 @@ body {
   border-width: 0px;
 }
 
-.chat-file{
+.chat-file {
   margin: 32px 130px 20px 0;
   position: absolute;
   top: 0;
