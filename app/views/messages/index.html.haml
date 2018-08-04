@@ -42,9 +42,9 @@
             .chat-main__massage-body-image
 
       .chat-main__footer
-        %form{:class => "chat-main__footer-form", :id => "new_message", :accept-charset => "UTF-8", :method => "post"}
+        %form{class: "chat-main__footer-form", id: "new_message", method: "post"}
           .chat-main__footer-body
-            %input{:placeholder => "type a message", :class => "input_message", :type => "text",:id => "message_body"}
+            %input{placeholder: "type a message",class: "input_message", type: "text", id: "message_body"}
               %label.chat-file
                 = fa_icon "image"
-            %input{:class => "submit", :type => "submit", :value => "send"}
+            %input{class: "submit", type:"submit", value: "send"}
