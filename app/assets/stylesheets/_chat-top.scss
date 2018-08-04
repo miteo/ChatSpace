@@ -1,9 +1,9 @@
 .notification {
   height: 28px;
-  background-color: #38AEF0;
+  background-color: $BlueColor;
+  .notice {
+    text-align: center;
+    color: $WhiteColor;
+  }
 }
 
-.notice {
-  text-align: center;
-  color: white;
-}
