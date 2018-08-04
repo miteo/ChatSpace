@@ -10,6 +10,8 @@
         .chat-side__user-content
           .chat-side__user--name miteo
         .chat-side__user--new-group
+          = fa_icon "pencil-square-o"
+          = fa_icon "cog"
         .chat-side__edit-user
 
       .chat-side__groups
@@ -45,5 +47,6 @@
         %form{:class => "chat-main__footer-form", :id => "new_message", :accept-charset => "UTF-8", :method => "post"}
           .chat-main__footer-body
             %input{:placeholder => "type a message", :class => "input_message", :type => "text",:id => "message_body"}
-            %label.chat-file
+              %label.chat-file
+                = fa_icon "image"
             %input{:class => "submit", :type => "submit", :value => "send"}
