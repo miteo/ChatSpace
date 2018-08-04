@@ -12,7 +12,7 @@
 
   .chat-side__groups
     .chat-side__group-list
-    = render "layouts/group"
+    = render "group"
 
 .chat-main
   .chat-main__header
@@ -23,7 +23,7 @@
 
   .chat-main__body
     .chat-main__body--massage-list
-    = render "layouts/massage"
+    = render "massage"
 
   .chat-main__footer
     %form{class: "chat-main__footer-form", id: "new_message", method: "post"}
