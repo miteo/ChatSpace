@@ -1,0 +1,113 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.chat-main {
+  height: 100vh;
+  width: calc(100% - 300px);
+  background-color: $WhiteColor;
+  float: left;
+  position: relative;
+  min-height: 100%;
+
+  &__header {
+    border:1px solid #eee;
+    height: calc(15% - 2px);
+
+    &--group-name {
+      padding: 35px 0px 0px 40px;
+      font-size: 20px;
+      float: left;
+    }
+  }
+
+  &__header--group-edit-btn {
+    float: right;
+    margin: 28px 40px 0;
+    padding: 12.5px 20px;
+    border: 1px solid $BlueColor;
+    color: $BlueColor;
+  }
+
+  &__header-members {
+    clear: left;
+    padding: 15px 0px 0px 40px;
+    font-size: 12px;
+    color: $GrayColor;
+    padding-bottom: 20px;
+  }
+
+  &__body {
+    height: calc( 100vh - 15% - 90px );
+
+    &--massage-list {
+      padding-top: 46px;
+    }
+  }
+
+  &__massage {
+    padding: 0px 40px 40px;
+
+    &-user-name {
+      float: left;
+    }
+
+    &-user-time {
+      float: left;
+      font-size: 12px;
+      padding: 2px 0px 0px 10px;
+      color: $GrayColor;
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    width: calc(100vw - 300px);
+    height: 90px;
+    background-color: $FormGrayColor;
+
+    .submit {
+      color: $WhiteColor;
+      width: 100px;
+      height: 50px;
+      text-align: center;
+      background-color: $BlueColor;
+      margin: 20px 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: none;
+    }
+
+    .input_message {
+      height: 50px;
+      width: calc( 100% - 130px );
+      margin: 20px 0;
+      padding-left: 20px;
+      border-width: 0px;
+    }
+
+    .chat-file {
+      margin: 32px 130px 20px 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &-form {
+      margin: 0 40px;
+      position: relative;
+    }
+  }
+
+  &__massage-body {
+    clear: both;
+    padding-top: 10px;
+  }
+}
