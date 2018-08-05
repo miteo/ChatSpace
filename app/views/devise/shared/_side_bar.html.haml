@@ -1,0 +1,13 @@
+.chat-side
+  .chat-side__user
+    .chat-side__user-content
+      .chat-side__user--name
+        = current_user.name
+    .chat-side__user--new-group
+      = fa_icon "pencil-square-o"
+      = fa_icon "cog"
+    .chat-side__edit-user
+
+  .chat-side__groups
+    .chat-side__group-list
+    = render "group"

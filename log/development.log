@@ -5019,3 +5019,196 @@ Processing by MessagesController#index as HTML
 Completed 200 OK in 355ms (Views: 351.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-08-05 15:35:29 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (5.7ms)
+Completed 200 OK in 39ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 15:35:34 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_group.html.haml (3.3ms)
+  Rendered messages/_massage.html.haml (3.3ms)
+  Rendered messages/index.html.haml within layouts/application (40.3ms)
+Completed 200 OK in 1360ms (Views: 1356.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 15:37:14 +0900
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/0f5fab32333b9a16/variables" for 127.0.0.1 at 2018-08-05 15:37:14 +0900
+Started GET "/" for 127.0.0.1 at 2018-08-05 15:37:19 +0900
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/d6d4fd6d9f6e6876/variables" for 127.0.0.1 at 2018-08-05 15:37:19 +0900
+  [1m[35m (54.1ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (21.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT GET_LOCK('8445024276154775190', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (19.8ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20180805052355)
+  [1m[35m (19.6ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (26.0ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (19.8ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180805052355')[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-08-05 06:38:29', '2018-08-05 06:38:29')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('8445024276154775190')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.9ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+Started GET "/" for 127.0.0.1 at 2018-08-05 15:38:46 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (3.8ms)
+Completed 200 OK in 24ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 15:38:52 +0900
+
+SyntaxError - syntax error, unexpected keyword_end, expecting end-of-input:
+  app/controllers/application_controller.rb:12:in `'
+  app/controllers/messages_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/4c9ea0fe341ee986/variables" for 127.0.0.1 at 2018-08-05 15:38:52 +0900
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 15:40:18 +0900
+Processing by MessagesController#index as HTML
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-05 15:40:19 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.7ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (40.3ms)
+Completed 200 OK in 841ms (Views: 819.3ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-05 17:29:17 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.2ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-05 19:14:26 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.2ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 115ms (Views: 80.9ms | ActiveRecord: 22.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-05 19:55:28 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.6ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-05 19:55:30 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.0ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-08-05 20:29:04 +0900
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91BoaGR2zoxW8rdgzhkxYp+Fht90/jBY+k9JzEAWJDBdZ0IcOfQAgESN2V9GERHTGmy+s+D8sYZ+YXYuvWqcpg==", "user"=>{"email"=>"miteo2621@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'miteo2621@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.3ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91BoaGR2zoxW8rdgzhkxYp+Fht90/jBY+k9JzEAWJDBdZ0IcOfQAgESN2V9GERHTGmy+s+D8sYZ+YXYuvWqcpg==", "user"=>{"email"=>"miteo2621@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.4ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 261ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 20:29:13 +0900
+Processing by MessagesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-05 20:29:13 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.7ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (16.0ms)
+Completed 200 OK in 61ms (Views: 60.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-08-05 20:29:18 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (3.3ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (13.2ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-08-05 20:29:31 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nBhQ+068WcQvIUW4fXPmPVMwQIKsr9Zol/6EfxfyorOqC8AoFVQEGTy++slXRRbccZLp54XL3XG3ZFIMqn9S7w==", "user"=>{"name"=>"miteo3", "email"=>"miteo2621@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (23.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'miteo2621@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('miteo3', 'miteo2621@gmail.com', '$2a$11$jG6Do..6RXmL5kEsapfGEuCFykeM1Kb61PKz2CGZThjoxZxSDOhX.', '2018-08-05 11:29:31', '2018-08-05 11:29:31')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[33mUPDATE `users` SET `sign_in_count` = 1, `current_sign_in_at` = '2018-08-05 11:29:31', `last_sign_in_at` = '2018-08-05 11:29:31', `current_sign_in_ip` = '127.0.0.1', `last_sign_in_ip` = '127.0.0.1' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 212ms (ActiveRecord: 27.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 20:29:31 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (12.3ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.3ms)
+
+
+
+ActionView::MissingTemplate - Missing partial shared/_side_bar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/Users/shohei.miterashi/Projects/ChatSpace/app/views"
+  * "/Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.4.3/app/views"
+:
+  app/views/messages/index.html.haml:5:in `_app_views_messages_index_html_haml__1445991338148746152_70330223519380'
+
+Started POST "/__better_errors/f5b6fd42096c9e9d/variables" for 127.0.0.1 at 2018-08-05 20:29:31 +0900
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 20:33:46 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_group.html.haml (3.5ms)
+  Rendered devise/shared/_side_bar.html.haml (18.7ms)
+  Rendered messages/_massage.html.haml (2.7ms)
+  Rendered messages/index.html.haml within layouts/application (40.0ms)
+Completed 200 OK in 84ms (Views: 79.8ms | ActiveRecord: 0.4ms)
+
+
