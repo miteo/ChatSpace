@@ -5212,3 +5212,609 @@ Processing by MessagesController#index as HTML
 Completed 200 OK in 84ms (Views: 79.8ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 20:44:21 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.4ms)
+
+
+
+ActionView::MissingTemplate - Missing partial /_notification with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/Users/shohei.miterashi/Projects/ChatSpace/app/views"
+  * "/Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.4.3/app/views"
+:
+  app/views/messages/index.html.haml:1:in `_app_views_messages_index_html_haml__1445991338148746152_70330213080580'
+
+Started POST "/__better_errors/e10719fcf79c2b80/variables" for 127.0.0.1 at 2018-08-05 20:44:21 +0900
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 20:44:32 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (1.8ms)
+  Rendered messages/_group.html.haml (1.9ms)
+  Rendered devise/shared/_side_bar.html.haml (7.4ms)
+  Rendered messages/_massage.html.haml (9.1ms)
+  Rendered messages/index.html.haml within layouts/application (30.8ms)
+Completed 200 OK in 76ms (Views: 72.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:00:34 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.0ms)
+  Rendered messages/_group.html.haml (2.1ms)
+  Rendered devise/shared/_side_bar.html.haml (8.0ms)
+  Rendered messages/_massage.html.haml (2.3ms)
+  Rendered messages/index.html.haml within layouts/application (26.2ms)
+Completed 200 OK in 482ms (Views: 439.3ms | ActiveRecord: 27.2ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:00:38 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.3ms)
+  Rendered messages/_group.html.haml (2.2ms)
+  Rendered devise/shared/_side_bar.html.haml (7.5ms)
+  Rendered messages/_massage.html.haml (2.8ms)
+  Rendered messages/index.html.haml within layouts/application (26.5ms)
+Completed 200 OK in 63ms (Views: 57.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-05 21:01:23 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 21ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-05 21:01:29 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 35ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-05 21:01:29 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+Completed 200 OK in 11ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/" for 127.0.0.1 at 2018-08-05 21:01:33 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/public"):
+  
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [19 times] (15.1ms)
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.0ms)
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (209.7ms)
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:01:40 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.1ms)
+  Rendered messages/_group.html.haml (2.2ms)
+  Rendered devise/shared/_side_bar.html.haml (8.1ms)
+  Rendered messages/_massage.html.haml (2.1ms)
+  Rendered messages/index.html.haml within layouts/application (23.8ms)
+Completed 200 OK in 55ms (Views: 50.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:03:03 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (1.9ms)
+  Rendered messages/_group.html.haml (2.5ms)
+  Rendered devise/shared/_side_bar.html.haml (8.4ms)
+  Rendered messages/_massage.html.haml (2.3ms)
+  Rendered messages/index.html.haml within layouts/application (24.2ms)
+Completed 200 OK in 344ms (Views: 339.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:03:06 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.4ms)
+  Rendered messages/_group.html.haml (2.4ms)
+  Rendered devise/shared/_side_bar.html.haml (8.2ms)
+  Rendered messages/_massage.html.haml (2.5ms)
+  Rendered messages/index.html.haml within layouts/application (26.8ms)
+Completed 200 OK in 58ms (Views: 54.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:03:08 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.5ms)
+  Rendered messages/_group.html.haml (2.3ms)
+  Rendered devise/shared/_side_bar.html.haml (7.7ms)
+  Rendered messages/_massage.html.haml (2.3ms)
+  Rendered messages/index.html.haml within layouts/application (25.6ms)
+Completed 200 OK in 60ms (Views: 56.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-05 21:03:15 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 10ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/" for 127.0.0.1 at 2018-08-05 21:03:18 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/public"):
+  
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered collection of /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [19 times] (3.5ms)
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (155.8ms)
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:03:23 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.0ms)
+  Rendered messages/_group.html.haml (2.8ms)
+  Rendered devise/shared/_side_bar.html.haml (15.4ms)
+  Rendered messages/_massage.html.haml (3.7ms)
+  Rendered messages/index.html.haml within layouts/application (33.7ms)
+Completed 200 OK in 69ms (Views: 64.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:03:28 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.9ms)
+  Rendered messages/_group.html.haml (3.0ms)
+  Rendered devise/shared/_side_bar.html.haml (9.9ms)
+  Rendered messages/_massage.html.haml (3.1ms)
+  Rendered messages/index.html.haml within layouts/application (29.1ms)
+Completed 200 OK in 61ms (Views: 56.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:05:16 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.1ms)
+  Rendered messages/_group.html.haml (2.9ms)
+  Rendered devise/shared/_side_bar.html.haml (8.4ms)
+  Rendered messages/_massage.html.haml (2.3ms)
+  Rendered messages/index.html.haml within layouts/application (25.2ms)
+Completed 200 OK in 351ms (Views: 346.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:05:17 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (3.2ms)
+  Rendered messages/_group.html.haml (2.2ms)
+  Rendered devise/shared/_side_bar.html.haml (7.9ms)
+  Rendered messages/_massage.html.haml (2.7ms)
+  Rendered messages/index.html.haml within layouts/application (28.2ms)
+Completed 200 OK in 65ms (Views: 60.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:05:26 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.2ms)
+  Rendered messages/_group.html.haml (2.5ms)
+  Rendered devise/shared/_side_bar.html.haml (8.4ms)
+  Rendered messages/_massage.html.haml (2.6ms)
+  Rendered messages/index.html.haml within layouts/application (26.3ms)
+Completed 200 OK in 369ms (Views: 365.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:05:27 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.0ms)
+  Rendered messages/_group.html.haml (2.1ms)
+  Rendered devise/shared/_side_bar.html.haml (7.7ms)
+  Rendered messages/_massage.html.haml (2.3ms)
+  Rendered messages/index.html.haml within layouts/application (24.2ms)
+Completed 200 OK in 58ms (Views: 53.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:05:32 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.3ms)
+  Rendered messages/_group.html.haml (2.3ms)
+  Rendered devise/shared/_side_bar.html.haml (7.6ms)
+  Rendered messages/_massage.html.haml (2.6ms)
+  Rendered messages/index.html.haml within layouts/application (24.7ms)
+Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:05:33 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.4ms)
+  Rendered messages/_group.html.haml (3.0ms)
+  Rendered devise/shared/_side_bar.html.haml (8.8ms)
+  Rendered messages/_massage.html.haml (2.7ms)
+  Rendered messages/index.html.haml within layouts/application (27.2ms)
+Completed 200 OK in 62ms (Views: 57.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-05 21:05:45 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+Completed 200 OK in 11ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:05:51 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.1ms)
+  Rendered messages/_group.html.haml (1.7ms)
+  Rendered devise/shared/_side_bar.html.haml (6.3ms)
+  Rendered messages/_massage.html.haml (2.2ms)
+  Rendered messages/index.html.haml within layouts/application (21.9ms)
+Completed 200 OK in 61ms (Views: 57.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:06:10 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.7ms)
+  Rendered messages/_group.html.haml (2.5ms)
+  Rendered devise/shared/_side_bar.html.haml (8.8ms)
+  Rendered messages/_massage.html.haml (2.3ms)
+  Rendered messages/index.html.haml within layouts/application (27.1ms)
+Completed 200 OK in 60ms (Views: 55.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-05 21:07:04 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-05 21:07:04 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 12ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/" for 127.0.0.1 at 2018-08-05 21:07:07 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/public"):
+  
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [19 times] (4.2ms)
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (156.3ms)
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:07:19 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.3ms)
+  Rendered messages/_group.html.haml (2.6ms)
+  Rendered devise/shared/_side_bar.html.haml (7.9ms)
+  Rendered messages/_massage.html.haml (2.5ms)
+  Rendered messages/index.html.haml within layouts/application (25.5ms)
+Completed 200 OK in 58ms (Views: 54.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:07:46 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.2ms)
+  Rendered messages/_group.html.haml (2.6ms)
+  Rendered devise/shared/_side_bar.html.haml (8.3ms)
+  Rendered messages/_massage.html.haml (2.5ms)
+  Rendered messages/index.html.haml within layouts/application (25.7ms)
+Completed 200 OK in 62ms (Views: 56.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:07:47 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.1ms)
+  Rendered messages/_group.html.haml (2.4ms)
+  Rendered devise/shared/_side_bar.html.haml (7.5ms)
+  Rendered messages/_massage.html.haml (2.7ms)
+  Rendered messages/index.html.haml within layouts/application (24.4ms)
+Completed 200 OK in 60ms (Views: 55.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-05 21:07:52 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-05 21:07:52 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (2.4ms)
+Completed 200 OK in 12ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:07:57 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.3ms)
+  Rendered messages/_group.html.haml (2.1ms)
+  Rendered devise/shared/_side_bar.html.haml (7.6ms)
+  Rendered messages/_massage.html.haml (2.4ms)
+  Rendered messages/index.html.haml within layouts/application (24.3ms)
+Completed 200 OK in 55ms (Views: 51.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:08:01 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.6ms)
+  Rendered messages/_group.html.haml (2.9ms)
+  Rendered devise/shared/_side_bar.html.haml (8.9ms)
+  Rendered messages/_massage.html.haml (3.0ms)
+  Rendered messages/index.html.haml within layouts/application (28.1ms)
+Completed 200 OK in 60ms (Views: 55.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-05 21:08:19 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-05 21:08:19 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 12ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:08:24 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (1.8ms)
+  Rendered messages/_group.html.haml (2.6ms)
+  Rendered devise/shared/_side_bar.html.haml (15.6ms)
+  Rendered messages/_massage.html.haml (3.0ms)
+  Rendered messages/index.html.haml within layouts/application (32.4ms)
+Completed 200 OK in 67ms (Views: 62.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:08:59 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.4ms)
+  Rendered messages/_group.html.haml (3.7ms)
+  Rendered devise/shared/_side_bar.html.haml (10.0ms)
+  Rendered messages/_massage.html.haml (4.4ms)
+  Rendered messages/index.html.haml within layouts/application (30.3ms)
+Completed 200 OK in 384ms (Views: 380.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:09:00 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.3ms)
+  Rendered messages/_group.html.haml (2.5ms)
+  Rendered devise/shared/_side_bar.html.haml (7.9ms)
+  Rendered messages/_massage.html.haml (2.7ms)
+  Rendered messages/index.html.haml within layouts/application (25.9ms)
+Completed 200 OK in 64ms (Views: 58.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-05 21:09:04 +0900
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-05 21:09:04 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shohei.miterashi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.7/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+Completed 200 OK in 11ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:09:07 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.3ms)
+  Rendered messages/_group.html.haml (1.9ms)
+  Rendered devise/shared/_side_bar.html.haml (7.1ms)
+  Rendered messages/_massage.html.haml (2.5ms)
+  Rendered messages/index.html.haml within layouts/application (23.5ms)
+Completed 200 OK in 52ms (Views: 48.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:09:23 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.2ms)
+  Rendered messages/_group.html.haml (2.1ms)
+  Rendered devise/shared/_side_bar.html.haml (7.1ms)
+  Rendered messages/_massage.html.haml (2.2ms)
+  Rendered messages/index.html.haml within layouts/application (24.1ms)
+Completed 200 OK in 406ms (Views: 402.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:09:24 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.6ms)
+  Rendered messages/_group.html.haml (2.4ms)
+  Rendered devise/shared/_side_bar.html.haml (7.8ms)
+  Rendered messages/_massage.html.haml (3.0ms)
+  Rendered messages/index.html.haml within layouts/application (26.4ms)
+Completed 200 OK in 65ms (Views: 60.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:10:26 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (1.8ms)
+  Rendered messages/_group.html.haml (2.1ms)
+  Rendered devise/shared/_side_bar.html.haml (6.9ms)
+  Rendered messages/_massage.html.haml (2.2ms)
+  Rendered messages/index.html.haml within layouts/application (22.1ms)
+Completed 200 OK in 51ms (Views: 47.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:10:32 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (2.6ms)
+  Rendered messages/_group.html.haml (2.4ms)
+  Rendered devise/shared/_side_bar.html.haml (8.5ms)
+  Rendered messages/_massage.html.haml (3.5ms)
+  Rendered messages/index.html.haml within layouts/application (26.5ms)
+Completed 200 OK in 57ms (Views: 53.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2018-08-05 21:13:39 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_notification.html.haml (5.1ms)
+  Rendered messages/_group.html.haml (3.6ms)
+  Rendered devise/shared/_side_bar.html.haml (10.4ms)
+  Rendered messages/_massage.html.haml (3.0ms)
+  Rendered messages/index.html.haml within layouts/application (39.8ms)
+Completed 200 OK in 84ms (Views: 79.3ms | ActiveRecord: 0.3ms)
+
+
